@@ -1,0 +1,13 @@
+{
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "Yomel BF",
+            "email": "jairbarretoflores138@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "1.23",
+        "dompdf/dompdf": "^3.1"
+    }
+}

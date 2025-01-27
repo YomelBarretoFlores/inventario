@@ -76,6 +76,12 @@ insert into operation_type (name) value ("salida");
 
 
 
+create table box(
+	id int not null auto_increment primary key,
+	created_at datetime
+);
+
+
 
 create table sell(
 	id int not null auto_increment primary key,

@@ -7,17 +7,24 @@
 					Directorio de Clientes
 				</h1>
 				<div class="d-flex gap-3">
-					<a href="index.php?view=newclient" class="btn btn-primary btn-lg shadow-sm">
-						<i class="fas fa-user-plus fa-fw"></i> Nuevo Cliente
+					<a href="index.php?view=newclient" class="btn btn-primary d-flex align-items-center">
+						<i class="bi bi-person-plus-fill me-2"></i> Nuevo Cliente
 					</a>
 					<div class="dropdown">
-						<button class="btn btn-success btn-lg shadow-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown">
-							<i class="fas fa-file-export fa-fw"></i> Exportar
+						<button class="btn btn-outline-primary dropdown-toggle d-flex align-items-center" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+							<i class="bi bi-file-earmark-arrow-down me-2"></i>
+							Exportar
 						</button>
-						<ul class="dropdown-menu dropdown-menu-end shadow">
+						<ul class="dropdown-menu dropdown-menu-end">
+							
 							<li>
-								<a class="dropdown-item py-2" href="report/clients-word.php">
-									<i class="fas fa-file-word fa-fw text-primary"></i> Exportar a Word
+								<a class="dropdown-item d-flex align-items-center" href="?view=exportclients&export-format=excel">
+									<i class="bi bi-file-earmark-excel me-2"></i> Exportar a Excel
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item d-flex align-items-center" href="?view=exportclients&export-format=pdf">
+									<i class="bi bi-file-earmark-pdf me-2"></i> Exportar a PDF
 								</a>
 							</li>
 						</ul>

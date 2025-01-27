@@ -24,7 +24,7 @@
 				</button>
 				<ul class="dropdown-menu">
 				<li><a class="dropdown-item d-flex align-items-center" href="?view=exportproducts&export-format=pdf">
-					<i class="bi bi-file-earmark-word me-2"></i> Exportar a PDF
+					<i class="bi bi-file-earmark-pdf me-2"></i> Exportar a PDF
 				</a></li>
 				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item d-flex align-items-center" href="?view=exportproducts&export-format=excel" >

@@ -16,20 +16,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="btn-toolbar">
-							<div class="btn-group">
-								<button type="button" class="btn btn-primary dropdown-toggle" data-coreui-toggle="dropdown">
-									<i class="cil-cloud-download me-2"></i> Exportar
-								</button>
-								<ul class="dropdown-menu dropdown-menu-end shadow-sm">
-									<li>
-										<a class="dropdown-item py-2 px-3" href="report/inventary-word.php">
-											<i class="cil-document text-primary me-2"></i> Exportar a Word
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						
 					</div>
 
 					<div class="card-body px-4">

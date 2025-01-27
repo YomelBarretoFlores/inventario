@@ -15,15 +15,24 @@
 					</div>
 					<div class="d-flex gap-2">
 						<div class="dropdown">
-							<button class="btn btn-ghost-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown">
-								<i class="bi bi-download me-1"></i> Exportar
+							<button class="btn btn-outline-primary dropdown-toggle d-flex align-items-center" type="button" data-coreui-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-file-earmark-arrow-down me-2"></i>Exportar
 							</button>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="report/providers-word.php"><i class="bi bi-file-earmark-word me-2"></i>Word (.docx)</a></li>
+								<li>
+									<a class="dropdown-item d-flex align-items-center" href="?view=exportproviders&export-format=excel">
+										<i class="bi bi-file-earmark-excel me-2"></i>Exportar a Excel
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item d-flex align-items-center" href="?view=exportproviders&export-format=pdf">
+										<i class="bi bi-file-earmark-pdf me-2"></i>Exportar a PDF
+									</a>
+								</li>
 							</ul>
 						</div>
-						<a href="index.php?view=newprovider" class="btn btn-primary">
-							<i class="bi bi-truck me-1"></i>Nuevo Proveedor
+						<a href="index.php?view=newprovider" class="btn btn-primary d-flex align-items-center">
+							<i class="bi bi-truck me-2"></i>Nuevo Proveedor
 						</a>
 					</div>
 				</div>

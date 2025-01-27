@@ -86,8 +86,8 @@ if(isset($_COOKIE["selled"])){
 						<td><?php echo $product->id;?></td>
 						<td><?php echo $operation->q;?></td>
 						<td><?php echo $product->name;?></td>
-						<td class="text-end">$ <?php echo number_format($product->price_out,2,".",",");?></td>
-						<td class="text-end fw-bold">$ <?php echo number_format($operation->q*$product->price_out,2,".",",");
+						<td class="text-end">S/ <?php echo number_format($product->price_out,2,".",",");?></td>
+						<td class="text-end fw-bold">S/ <?php echo number_format($operation->q*$product->price_out,2,".",",");
 							$total+=$operation->q*$product->price_out;?></td>
 					</tr>
 				<?php endforeach; ?>
@@ -101,15 +101,15 @@ if(isset($_COOKIE["selled"])){
 					<div class="card-body">
 						<div class="d-flex justify-content-between mb-2">
 							<span>Descuento:</span>
-							<span class="fw-bold">$ <?php echo number_format($sell->discount,2,'.',',');?></span>
+							<span class="fw-bold">S/ <?php echo number_format($sell->discount,2,'.',',');?></span>
 						</div>
 						<div class="d-flex justify-content-between mb-2">
 							<span>Subtotal:</span>
-							<span class="fw-bold">$ <?php echo number_format($total,2,'.',',');?></span>
+							<span class="fw-bold">S/ <?php echo number_format($total,2,'.',',');?></span>
 						</div>
 						<div class="d-flex justify-content-between">
 							<span class="h5 mb-0">Total:</span>
-							<span class="h5 mb-0">$ <?php echo number_format($total-$sell->discount,2,'.',',');?></span>
+							<span class="h5 mb-0">S/ <?php echo number_format($total-$sell->discount,2,'.',',');?></span>
 						</div>
 					</div>
 				</div>

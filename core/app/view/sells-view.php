@@ -52,7 +52,7 @@
 									</td>
 									<td>
 										<span class="fw-bold text-success">
-											$ <?php echo number_format($sell->total - $sell->discount, 2); ?>
+										S/ <?php echo number_format($sell->total - $sell->discount, 2); ?>
 										</span>
 										<?php if($sell->discount > 0): ?>
 											<span class="badge bg-danger ms-2">-$<?php echo number_format($sell->discount, 2); ?></span>
@@ -85,7 +85,7 @@
 					<i class="bi bi-cart-x display-1 text-muted mb-4"></i>
 					<h2 class="text-muted">No hay ventas registradas</h2>
 					<p class="text-muted">No se ha realizado ninguna venta hasta el momento.</p>
-					<a href="index.php?view=newsell" class="btn btn-primary">
+					<a href="index.php?view=sell" class="btn btn-primary">
 						<i class="bi bi-plus-circle me-2"></i>Registrar Nueva Venta
 					</a>
 				</div>

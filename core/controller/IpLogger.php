@@ -1,13 +1,5 @@
 <?php
-// IpLogger
-// la funcion de esta clase es :
-// obtener la ip del cliente que nos esta visitando y conocer si es un visitante
-// o es un usuario registrado.
-// >>> en caso de ser visitante, su actividad se registrara como visitante
-// dicha informacion se eliminara ca 3 dias
-// >>> en caso de ser un usuario registrado, se registrara su actividad
-// entonces cuando este usuario visite el perfil de otro, solo se apuntara en visitas 1vez cada 24horas.
-// la infomacion de usuarios registrados no se eliminara.
+
 
 class IpLogger {
 

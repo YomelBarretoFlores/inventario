@@ -9,11 +9,7 @@
 							<h4 class="mb-0"><i class='fa fa-archive text-primary'></i> Gestión de Caja</h4>
 							<small class="text-muted">Panel de control de ventas y transacciones</small>
 						</div>
-						<div class="btn-toolbar">
-							<button class="btn btn-primary btn-sm ms-2">
-								<i class="fa fa-refresh"></i> Actualizar
-							</button>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -101,9 +97,7 @@
 					<i class="fa fa-shopping-cart fa-4x text-muted mb-3"></i>
 					<h3 class="text-muted">No hay ventas registradas</h3>
 					<p class="text-muted">Aún no se han realizado transacciones en la caja.</p>
-					<button class="btn btn-primary">
-						<i class="fa fa-plus"></i> Nueva Venta
-					</button>
+					
 				</div>
 			</div>
 			<?php } ?>

@@ -1,9 +1,7 @@
 <?php
 
 
-// 10 de Octubre del 2014
-// Bootload.php
-// @brief esta clase sirve para alistar los boot
+
 
 class Bootload {
 	/**
@@ -27,10 +25,7 @@ class Bootload {
 		}
 	}
 
-	/**
-	* @function isValid
-	* @brief valida la existencia de una vista
-	**/	
+	
 	public static function isValid(){
 		$valid=false;
 		if(file_exists($file = "core/modules/".Module::$module."/boot/".$_GET['view']."/boot-default.php")){

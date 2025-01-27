@@ -35,7 +35,7 @@ $q= OperationData::getQYesF($product->id);
 		<td style="width:80px;"><?php echo $product->id; ?></td>
 		<td><?php echo $product->name; ?></td>
 		<td><?php echo $product->unit; ?></td>
-		<td><b>$<?php echo $product->price_out; ?></b></td>
+		<td><b>S/<?php echo $product->price_out; ?></b></td>
 		<td>
 			<?php echo $q; ?>
 		</td>

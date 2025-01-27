@@ -1,10 +1,6 @@
 <?php
 
-/**
-* Widget
-* Clase unica para el sistema Zard o probablemente pueda ser portada a otros sistemas o-o
-* @date 2016-09-18
-**/
+
 
 class Widget {
 

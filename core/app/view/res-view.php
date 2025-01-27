@@ -62,7 +62,7 @@
 									$product = $operation->getProduct();
 									$total += $operation->q*$product->price_in;
 								}
-								echo '<span class="text-success fw-semibold">$ '.number_format($total).'</span>';
+								echo '<span class="text-success fw-semibold">S/ '.number_format($total).'</span>';
 								?>
 							</td>
 							<td>

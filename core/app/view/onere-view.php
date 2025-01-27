@@ -114,7 +114,7 @@
 							<td><span class="badge bg-light text-dark"><?php echo $product->id;?></span></td>
 							<td><?php echo $operation->q;?></td>
 							<td class="text-primary fw-bold"><?php echo $product->name;?></td>
-							<td>$ <?php echo number_format($product->price_in,2,".",",");?></td>
+							<td>S/ <?php echo number_format($product->price_in,2,".",",");?></td>
 							<td class="fw-bold">$ <?php echo number_format($operation->q*$product->price_in,2,".",",");
 								$total+=$operation->q*$product->price_in;?></td>
 						</tr>
@@ -131,7 +131,7 @@
 								<i class="cil-dollar fs-3 me-3"></i>
 								<div>
 									<small>Total a Pagar</small>
-									<h3 class="mb-0">$ <?php echo number_format($total,2,'.',','); ?></h3>
+									<h3 class="mb-0">S/ <?php echo number_format($total,2,'.',','); ?></h3>
 								</div>
 							</div>
 						</div>

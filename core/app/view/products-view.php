@@ -104,8 +104,8 @@
 					<?php endif;?>
 					</td>
 					<td class="fw-semibold"><?php echo $product->name; ?></td>
-					<td class="text-end">$ <?php echo number_format($product->price_in,2,'.',','); ?></td>
-					<td class="text-end">$ <?php echo number_format($product->price_out,2,'.',','); ?></td>
+					<td class="text-end">S/ <?php echo number_format($product->price_in,2,'.',','); ?></td>
+					<td class="text-end">S/ <?php echo number_format($product->price_out,2,'.',','); ?></td>
 					<td><?php echo $product->category_id!=null ? $product->getCategory()->name : "<span class='text-muted fst-italic'>Sin categoría</span>"; ?></td>
 					<td class="text-center"><?php echo $product->inventary_min; ?></td>
 					<td class="text-center">

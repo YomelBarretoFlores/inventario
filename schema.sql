@@ -31,6 +31,7 @@ create table product(
 	name varchar(50),
 	description text,
 	inventary_min int default 10,
+	inventary_in int default 10,
 	price_in float,
 	price_out float,
 	unit varchar(255),
@@ -73,10 +74,7 @@ create table operation_type(
 insert into operation_type (name) value ("entrada");
 insert into operation_type (name) value ("salida");
 
-create table box(
-	id int not null auto_increment primary key,
-	created_at datetime
-);
+
 
 
 create table sell(
@@ -109,25 +107,5 @@ create table operation(
 	foreign key (sell_id) references sell(id)
 );
 
-/*
-configuration kind
-1.- Boolean
-2.- Text
-3.- Number
-*/
-create table configuration(
-	id int not null auto_increment primary key,
-	short varchar(255) unique,
-	name varchar(255) unique,
-	kind int,
-	val varchar(255)
-);
-insert into configuration(short,name,kind,val) value("title","Titulo del Sistema",2,"Inventio Lite");
-insert into configuration(short,name,kind,val) value("use_image_product","Utilizar Imagenes en los productos",1,0);
-insert into configuration(short,name,kind,val) value("active_clients","Activar clientes",1,0);
-insert into configuration(short,name,kind,val) value("active_providers","Activar proveedores",1,0);
-insert into configuration(short,name,kind,val) value("active_categories","Activar categorias",1,0);
-insert into configuration(short,name,kind,val) value("active_reports_word","Activar reportes en Word",1,0);
-insert into configuration(short,name,kind,val) value("active_reports_excel","Activar reportes en Excel",1,0);
-insert into configuration(short,name,kind,val) value("active_reports_pdf","Activar reportes en PDF",1,0);
+
 

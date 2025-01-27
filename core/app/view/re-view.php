@@ -74,7 +74,7 @@
 											<td><?php echo $product->id; ?></td>
 											<td><?php echo $product->name; ?></td>
 											<td><?php echo $product->unit; ?></td>
-											<td class="text-end">$<?php echo number_format($product->price_in, 2); ?></td>
+											<td class="text-end">S/<?php echo number_format($product->price_in, 2); ?></td>
 											<td class="text-center"><?php echo $q; ?></td>
 											<td>
 												<input type="hidden" name="product_id" value="<?php echo $product->id; ?>">
@@ -141,8 +141,8 @@
 									<td class="text-center"><?php echo $p["q"]; ?></td>
 									<td><?php echo $product->unit; ?></td>
 									<td><?php echo $product->name; ?></td>
-									<td class="text-end">$<?php echo number_format($product->price_in, 2); ?></td>
-									<td class="text-end">$<?php echo number_format($pt, 2); ?></td>
+									<td class="text-end">S/<?php echo number_format($product->price_in, 2); ?></td>
+									<td class="text-end">S/<?php echo number_format($pt, 2); ?></td>
 									<td class="text-center">
 										<a href="index.php?view=clearre&product_id=<?php echo $product->id; ?>" 
 										   class="btn btn-danger btn-sm">
@@ -183,15 +183,15 @@
 										<table class="table table-borderless mb-0">
 											<tr>
 												<td>Subtotal:</td>
-												<td class="text-end">$<?php echo number_format($total*.84, 2); ?></td>
+												<td class="text-end">S/<?php echo number_format($total*.84, 2); ?></td>
 											</tr>
 											<tr>
 												<td>IVA:</td>
-												<td class="text-end">$<?php echo number_format($total*.16, 2); ?></td>
+												<td class="text-end">S/<?php echo number_format($total*.16, 2); ?></td>
 											</tr>
 											<tr class="fw-bold">
 												<td>Total:</td>
-												<td class="text-end">$<?php echo number_format($total, 2); ?></td>
+												<td class="text-end">S/<?php echo number_format($total, 2); ?></td>
 											</tr>
 										</table>
 									</div>

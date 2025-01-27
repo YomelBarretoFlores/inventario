@@ -116,8 +116,8 @@ $product = ProductData::getById($p["product_id"]);
 	<td ><?php echo $p["q"]; ?></td>
 	<td><?php echo $product->unit; ?></td>
 	<td><?php echo $product->name; ?></td>
-	<td><b>$ <?php echo number_format($product->price_out); ?></b></td>
-	<td><b>$ <?php  $pt = $product->price_out*$p["q"]; $total +=$pt; echo number_format($pt); ?></b></td>
+	<td><b>S/ <?php echo number_format($product->price_out); ?></b></td>
+	<td><b>S/ <?php  $pt = $product->price_out*$p["q"]; $total +=$pt; echo number_format($pt); ?></b></td>
 	<td style="width:30px;"><a href="index.php?view=clearcart&product_id=<?php echo $product->id; ?>" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Cancelar</a></td>
 </tr>
 
@@ -158,15 +158,15 @@ $clients = PersonData::getClients();
 <table class="table table-bordered">
 <tr>
 	<td><p>Subtotal</p></td>
-	<td><p><b>$ <?php echo number_format($total*.84); ?></b></p></td>
+	<td><p><b>S/ <?php echo number_format($total*.82); ?></b></p></td>
 </tr>
 <tr>
-	<td><p>IVA</p></td>
-	<td><p><b>$ <?php echo number_format($total*.16); ?></b></p></td>
+	<td><p>IGV</p></td>
+	<td><p><b>S/ <?php echo number_format($total*.18); ?></b></p></td>
 </tr>
 <tr>
 	<td><p>Total</p></td>
-	<td><p><b>$ <?php echo number_format($total); ?></b></p></td>
+	<td><p><b>S/ <?php echo number_format($total); ?></b></p></td>
 </tr>
 
 </table>
@@ -203,7 +203,7 @@ $clients = PersonData::getClients();
 			e.preventDefault();
 		}else{
 			if(discount==""){ discount=0;}
-			go = confirm("Cambio: $"+(money-(<?php echo $total;?>-discount ) ) );
+			go = confirm("Cambio: S/"+(money-(<?php echo $total;?>-discount ) ) );
 			if(go){}
 				else{e.preventDefault();}
 		}

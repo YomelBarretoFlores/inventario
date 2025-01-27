@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
-    <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>Inventario Lite</title>
+    <title>Inventario</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -85,7 +83,7 @@
 <div class="sidebar-brand d-none d-md-flex">
 <div class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
 
-<h4><a href="./" style="color: white;">INVENTIO<b>LITE</b></a></h4>
+<h4><a href="./" style="color: white;">INVENTARIO<b>LITE</b></a></h4>
 
 </div>
 <div class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
